@@ -1,24 +1,24 @@
 TASK
-Hae kaikkien vuonna 1940 julkaistujen elokuvien nimet.
+Sélectionnez les titres de tous les films sortis en 1940.
 
 TABLES
-CREATE TABLE Elokuvat (id INTEGER PRIMARY KEY, nimi TEXT, vuosi INTEGER);
+CREATE TABLE Films (id INTEGER PRIMARY KEY, titre TEXT, année INTEGER);
 
 TEST
-INSERT INTO Elokuvat (nimi,vuosi) VALUES ('Lumikki',1937);
-INSERT INTO Elokuvat (nimi,vuosi) VALUES ('Fantasia',1940);
-INSERT INTO Elokuvat (nimi,vuosi) VALUES ('Pinocchio',1940);
-INSERT INTO Elokuvat (nimi,vuosi) VALUES ('Dumbo',1941);
-INSERT INTO Elokuvat (nimi,vuosi) VALUES ('Bambi',1942);
+INSERT INTO Films (titre,année) VALUES ('Blanche-Neige',1937);
+INSERT INTO Films (titre,année) VALUES ('Fantasia',1940);
+INSERT INTO Films (titre,année) VALUES ('Pinocchio',1940);
+INSERT INTO Films (titre,année) VALUES ('Dumbo',1941);
+INSERT INTO Films (titre,année) VALUES ('Bambi',1942);
 
 RESULT
 Fantasia
 Pinocchio
 
 TEST
-INSERT INTO Elokuvat (nimi,vuosi) VALUES ('Fantasia',1940);
-INSERT INTO Elokuvat (nimi,vuosi) VALUES ('Aristokatit',1970);
-INSERT INTO Elokuvat (nimi,vuosi) VALUES ('Hiidenpata',1985);
+INSERT INTO Films (titre,année) VALUES ('Fantasia',1940);
+INSERT INTO Films (titre,année) VALUES ('Les Aristochats',1970);
+INSERT INTO Films (titre,année) VALUES ('Taram et le Chaudron magique',1985);
 
 RESULT
 Fantasia
