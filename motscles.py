@@ -27,7 +27,7 @@ def traduitFichier(ndf):
             i +=1
             mc = m.group()[2:-2] # retrait des {{ }}
             if mc in d.keys():
-                if d[mc] != None:
+                if d[mc] is not None: # != None:
                     t = motif.sub(d[mc],t , 1) #[:m.start()] + d[mc] + t[m.end():] 
                     compt += 1
             else:
@@ -43,11 +43,11 @@ def traduitFichier(ndf):
         g.write(t)
         g.close()
 
-for ndf in glob.glob("**.template"):
+for ndf in glob.glob("**/*.template"):
     traduitFichier(ndf)
 
-print("Dictionnaire mis à jour :")
-print(d)
+print(f"Dictionnaire mis à jour : il comporte {len(d)} entrées.")
+
 with open("suomi-français.json","w") as h:
     h.write(json.dumps(d))
     h.close()
