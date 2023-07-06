@@ -1,24 +1,24 @@
 TASK
-{Hae kaikkien vuonna 1940 julkaistujen elokuvien nimet.}
+{{Hae kaikkien vuonna 1940 julkaistujen elokuvien nimet.}}
 
 TABLES
-CREATE TABLE {Elokuvat} (id INTEGER PRIMARY KEY, {nimi} TEXT, {vuosi} INTEGER);
+CREATE TABLE {{Elokuvat}} (id INTEGER PRIMARY KEY, {{nimi}} TEXT, {{vuosi}} INTEGER);
 
 TEST
-INSERT INTO {Elokuvat} ({nimi},{vuosi}) VALUES ('{Lumikki}',1937);
-INSERT INTO {Elokuvat} ({nimi},{vuosi}) VALUES ('Fantasia',1940);
-INSERT INTO {Elokuvat} ({nimi},{vuosi}) VALUES ('Pinocchio',1940);
-INSERT INTO {Elokuvat} ({nimi},{vuosi}) VALUES ('Dumbo',1941);
-INSERT INTO {Elokuvat} ({nimi},{vuosi}) VALUES ('Bambi',1942);
+INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('{{Lumikki}}',1937);
+INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('Fantasia',1940);
+INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('Pinocchio',1940);
+INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('Dumbo',1941);
+INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('Bambi',1942);
 
 RESULT
 Fantasia
 Pinocchio
 
 TEST
-INSERT INTO {Elokuvat} ({nimi},{vuosi}) VALUES ('Fantasia',1940);
-INSERT INTO {Elokuvat} ({nimi},{vuosi}) VALUES ('{Aristokatit}',1970);
-INSERT INTO {Elokuvat} ({nimi},{vuosi}) VALUES ('{Hiidenpata}',1985);
+INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('Fantasia',1940);
+INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('{{Aristokatit}}',1970);
+INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('{{Hiidenpata}}',1985);
 
 RESULT
 Fantasia
