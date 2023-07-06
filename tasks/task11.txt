@@ -1,25 +1,25 @@
 TASK
-{Hae kaikki eri etunimet.}
+Sélectionnez tous les prénoms.
 
 TABLES
-CREATE TABLE {Nimet} (id INTEGER PRIMARY KEY, {etunimi} TEXT, {sukunimi} TEXT);
+CREATE TABLE Titre (id INTEGER PRIMARY KEY, prénom TEXT, nom TEXT);
 
 TEST
-INSERT INTO {Nimet} ({etunimi},{sukunimi}) VALUES ('Anna','Korhonen');
-INSERT INTO {Nimet} ({etunimi},{sukunimi}) VALUES ('Anna','Virtanen');
-INSERT INTO {Nimet} ({etunimi},{sukunimi}) VALUES ('Pekka','Korhonen');
-INSERT INTO {Nimet} ({etunimi},{sukunimi}) VALUES ('Pekka','Lahtinen');
-INSERT INTO {Nimet} ({etunimi},{sukunimi}) VALUES ('Pekka','Virtanen');
+INSERT INTO Titre (prénom,nom) VALUES ('Anna','Korhonen');
+INSERT INTO Titre (prénom,nom) VALUES ('Anna','Virtanen');
+INSERT INTO Titre (prénom,nom) VALUES ('Pekka','Korhonen');
+INSERT INTO Titre (prénom,nom) VALUES ('Pekka','Lahtinen');
+INSERT INTO Titre (prénom,nom) VALUES ('Pekka','Virtanen');
 
 RESULT
 Anna
 Pekka
 
 TEST
-INSERT INTO {Nimet} ({etunimi},{sukunimi}) VALUES ('Anna','Korhonen');
-INSERT INTO {Nimet} ({etunimi},{sukunimi}) VALUES ('Pekka','Korhonen');
-INSERT INTO {Nimet} ({etunimi},{sukunimi}) VALUES ('Uolevi','Korhonen');
-INSERT INTO {Nimet} ({etunimi},{sukunimi}) VALUES ('Uolevi','Lahtinen');
+INSERT INTO Titre (prénom,nom) VALUES ('Anna','Korhonen');
+INSERT INTO Titre (prénom,nom) VALUES ('Pekka','Korhonen');
+INSERT INTO Titre (prénom,nom) VALUES ('Uolevi','Korhonen');
+INSERT INTO Titre (prénom,nom) VALUES ('Uolevi','Lahtinen');
 
 RESULT
 Anna

@@ -1,22 +1,22 @@
 TASK
-titre
+Obtenez la somme des salaires  des employés.
 
 TABLES
-CREATE TABLE titre (id INTEGER PRIMARY KEY, titre TEXT, titre INTEGER);
+CREATE TABLE Salariés (id INTEGER PRIMARY KEY, titre TEXT, salaire INTEGER);
 
 TEST
-INSERT INTO titre (titre,titre) VALUES ('Uolevi',2500);
-INSERT INTO titre ({nimi},{palkka}) VALUES ('Maija',3000);
-INSERT INTO {Tyontekijat} ({nimi},{palkka}) VALUES ('Liisa',5000);
-INSERT INTO {Tyontekijat} ({nimi},{palkka}) VALUES ('Kaaleppi',1500);
+INSERT INTO Salariés (titre,salaire) VALUES ('Uolevi',2500);
+INSERT INTO Salariés (titre,salaire) VALUES ('Maija',3000);
+INSERT INTO Salariés (titre,salaire) VALUES ('Liisa',5000);
+INSERT INTO Salariés (titre,salaire) VALUES ('Kaaleppi',1500);
 
 RESULT
 12000
 
 TEST
-INSERT INTO {Tyontekijat} ({nimi},{palkka}) VALUES ('Kotivalo',2000);
-INSERT INTO {Tyontekijat} ({nimi},{palkka}) VALUES ('Justiina',7000);
-INSERT INTO {Tyontekijat} ({nimi},{palkka}) VALUES ('Vihtori',1000);
+INSERT INTO Salariés (titre,salaire) VALUES ('Kotivalo',2000);
+INSERT INTO Salariés (titre,salaire) VALUES ('Justiina',7000);
+INSERT INTO Salariés (titre,salaire) VALUES ('Vihtori',1000);
 
 RESULT
 10000
