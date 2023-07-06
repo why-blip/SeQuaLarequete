@@ -1,8 +1,8 @@
 # Francisation des exercices
 
 J'ai fait le choix d'utiliser des gabarits pour effectuer la traduction des exercices.
- Cela me paraît moins nous exposer à des erreurs puisque dans le cas 
- d'une validation des réponses automaisée, il faut être particulièrement
+ Cela me paraît moins nous exposer à des erreurs. En effet dans le cas 
+ d'une validation des réponses automatisée, il faut être particulièrement
  attentif à la cohérence des données. 
  
 Cela exige en contrepartie la mise au point (c'est fait) et l'utilisation
@@ -11,7 +11,7 @@ Cela exige en contrepartie la mise au point (c'est fait) et l'utilisation
 ## Exercices déjà traduits
 
 Les textes des exercices sont sous la forme de fichiers comme `task1.txt` 
- accompagé de son `task1.template` par exemple.
+ accompagné de son `task1.template` par exemple.
  
  - Le fichier `*.txt` est celui qui sera effectivement utilisé par 
   l'exercicseur.
@@ -46,10 +46,10 @@ Il passe en revue tous les `*.template`
 L'avancement du projet de traduction est affiché pour chaque fichier
  en pourcentage.
 
-Un dictionnaire (au sens Python) est utilisé pour stocker les traductions 
+Un dictionnaire (au sens Python comme au sens propre) est utilisé pour stocker les traductions 
 françaises des expressions finnoises,. 
 
-Ce dictionnaire est stocké dans le fichier `suomi-français.json`. 
+Ce dictionnaire est stocké dans le fichier `suomi-français.json`.
  
 ### Mise à jour du dictionnaire
 
@@ -67,4 +67,3 @@ A[modification d'un ou plusieurs template] --> B[`python motscles.py`]
 B --> C[complétion du dictionnaire]
 C --> A
 ```
-    

@@ -20,4 +20,6 @@ Le plus simple est de :
 - Avec votre navigateur, allez sur `localhost:8000` (si 8000 est le port
  choisi par le serveur Web)
  
- 
+### Traduction 
+
+[Vous voulez contribuer à la traduction ?](francisation.md)
