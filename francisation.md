@@ -64,6 +64,9 @@ Il faut ouvrir le fichier `suomi-français.json` et rempacer les `null`
 graph TD
 0{Jour de pluie ?} -- oui --> A 
 A[modification d'un ou plusieurs template] --> B[`python motscles.py`]
-B --> C[complétion du dictionnaire]
-C --> A
+B --> C[complétion des enntrées du dictionnaire]
+B --> E[création des exercices traduits]
+C --> D[Ajout manuel des traductions dans le dictionnaire]
+D --> A
+D --> B
 ```
