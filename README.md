@@ -17,7 +17,7 @@ Le plus simple est de :
 
 - Télécharger le contenu de ce dépôt dans un dossier 
 - Dans ce dossier, exécuter `python -m http.server`
-- Avec votre navigateur, allez sur `localhost:8000` (si 8000 est le port
+- Ouvrir `localhost:8000` dans un navigateur (si 8000 est le port
  choisi par le serveur Web)
  
 ### Traduction 
