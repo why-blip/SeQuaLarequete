@@ -1,7 +1,5 @@
 # Francisation des exercices
-
-J'ai fait le choix d'utiliser des gabarits pour effectuer la traduction des exercices.
- Cela me paraît moins nous exposer à des erreurs. En effet dans le cas 
+Dans le cas 
  d'une validation des réponses automatisée, il faut être particulièrement
  attentif à la cohérence des données. 
  
@@ -16,7 +14,7 @@ Les textes des exercices sont sous la forme de fichiers comme `task1.txt`
  - Le fichier `*.txt` est celui qui sera effectivement utilisé par 
   l'exercicseur.
   
- - Le fichier `*.template` est celui qui va généré le précédent après
+ - Le fichier `*.template` est celui qui va générer le précédent après
  subsitution des expressions finnois par leur éqhuvalente française.
   
 
@@ -30,8 +28,7 @@ Le cycle de travail est le suivant:
 
 - Ouvrir un fichier `*.template` non encore traité
 - Entourer les expressions en _suomi_ par des doubles accolades: `{{ ... }}`.
-Les phrases complètes sont à entourer dans leur globalité car 
-on ne va pas faire une traduction mot-à-mot. C'est le cas des consignes de chaque énoncé.
+Les phrases complètes sont à entourer dans leur globalité. C'est le cas des consignes de chaque énoncé.
 - Enregistrer les modifications.
 
 ### Mise à jour des entrées du dictionnaire
