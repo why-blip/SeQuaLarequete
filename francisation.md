@@ -15,7 +15,7 @@ Les textes des exercices sont sous la forme de fichiers comme `task1.txt`
   l'exercicseur.
   
  - Le fichier `*.template` est celui qui va générer le précédent après
- subsitution des expressions finnois par leur éqhuvalente française.
+ subsitution des expressions finnoises par leur équivalentes françaises.
   
 
 Les exercices 1 à 16 sont déjà traduits. Il reste ceux de 17 à 100...
