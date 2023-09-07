@@ -18,7 +18,7 @@ Les textes des exercices sont sous la forme de fichiers comme `task1.txt`
  subsitution des expressions finnoises par leur équivalentes françaises.
   
 
-Les exercices 1 à 16 sont déjà traduits. Il reste ceux de 17 à 100...
+Les exercices 1 à 26 sont déjà traduits. 
 
 ## Pour continuer la traduction
 
