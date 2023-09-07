@@ -1,5 +1,5 @@
 TASK
-Obtenez le nombre d'employés.
+Obtenez le nombre d'employé-es.
 
 TABLES
 CREATE TABLE Salariés (id INTEGER PRIMARY KEY, titre TEXT, salaire INTEGER);

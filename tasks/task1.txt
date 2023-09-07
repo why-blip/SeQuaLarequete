@@ -20,11 +20,11 @@ Bambi
 TEST
 INSERT INTO Films (titre,année) VALUES ('Cendrillon',1950);
 INSERT INTO Films (titre,année) VALUES ('Peter Pan',1953);
-INSERT INTO Films (titre,année) VALUES ('Les Aristochats',1970);
+INSERT INTO Films (titre,année) VALUES ('Aristochats (Les)',1970);
 INSERT INTO Films (titre,année) VALUES ('Taram et le Chaudron magique',1985);
 
 RESULT
 Cendrillon
 Peter Pan
-Les Aristochats
+Aristochats (Les)
 Taram et le Chaudron magique

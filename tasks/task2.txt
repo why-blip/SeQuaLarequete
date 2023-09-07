@@ -21,11 +21,11 @@ Bambi|1942
 TEST
 INSERT INTO Films (titre,année) VALUES ('Cendrillon',1950);
 INSERT INTO Films (titre,année) VALUES ('Peter Pan',1953);
-INSERT INTO Films (titre,année) VALUES ('Les Aristochats',1970);
+INSERT INTO Films (titre,année) VALUES ('Aristochats (Les)',1970);
 INSERT INTO Films (titre,année) VALUES ('Taram et le Chaudron magique',1985);
 
 RESULT
 Cendrillon|1950
 Peter Pan|1953
-Les Aristochats|1970
+Aristochats (Les)|1970
 Taram et le Chaudron magique|1985

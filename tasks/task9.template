@@ -15,9 +15,9 @@ INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('Bambi',1942);
 
 RESULT
 Pinocchio
-{{Lumikki}}
 Fantasia
 Dumbo
+{{Lumikki}}
 Bambi
 
 TEST
@@ -27,7 +27,7 @@ INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('{{Aristokatit}}',1970);
 INSERT INTO {{Elokuvat}} ({{nimi}},{{vuosi}}) VALUES ('{{Hiidenpata}}',1985);
 
 RESULT
-{{Tuhkimo}}
-Peter Pan
 {{Hiidenpata}}
+Peter Pan
+{{Tuhkimo}}
 {{Aristokatit}}

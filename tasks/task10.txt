@@ -1,5 +1,5 @@
 TASK
-Sélectionnez les titres des films et leur année de sortie, principalement dans l'ordre d'année croissante, secondairement par ordre alphabétique.
+Sélectionnez les titres des films et leur année de sortie, principalement du plus récent au plus ancien, secondairement par ordre alphabétique.
 
 STRICT
 
@@ -23,12 +23,12 @@ Blanche-Neige|1937
 TEST
 INSERT INTO Films (titre,année) VALUES ('Cendrillon',1950);
 INSERT INTO Films (titre,année) VALUES ('Peter Pan',1953);
-INSERT INTO Films (titre,année) VALUES ('Les Aristochats',1970);
+INSERT INTO Films (titre,année) VALUES ('Aristochats (Les)',1970);
 INSERT INTO Films (titre,année) VALUES ('Taram et le Chaudron magique',1985);
 
 RESULT
 Taram et le Chaudron magique|1985
-Les Aristochats|1970
+Aristochats (Les)|1970
 Peter Pan|1953
 Cendrillon|1950
 

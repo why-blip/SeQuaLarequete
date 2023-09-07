@@ -2,24 +2,24 @@ TASK
 Sélectionnez tous les prénoms.
 
 TABLES
-CREATE TABLE Titre (id INTEGER PRIMARY KEY, prénom TEXT, nom TEXT);
+CREATE TABLE Noms (id INTEGER PRIMARY KEY, prénom TEXT, nom TEXT);
 
 TEST
-INSERT INTO Titre (prénom,nom) VALUES ('Anna','Korhonen');
-INSERT INTO Titre (prénom,nom) VALUES ('Anna','Virtanen');
-INSERT INTO Titre (prénom,nom) VALUES ('Pekka','Korhonen');
-INSERT INTO Titre (prénom,nom) VALUES ('Pekka','Lahtinen');
-INSERT INTO Titre (prénom,nom) VALUES ('Pekka','Virtanen');
+INSERT INTO Noms (prénom,nom) VALUES ('Anna','Korhonen');
+INSERT INTO Noms (prénom,nom) VALUES ('Anna','Virtanen');
+INSERT INTO Noms (prénom,nom) VALUES ('Pekka','Korhonen');
+INSERT INTO Noms (prénom,nom) VALUES ('Pekka','Lahtinen');
+INSERT INTO Noms (prénom,nom) VALUES ('Pekka','Virtanen');
 
 RESULT
 Anna
 Pekka
 
 TEST
-INSERT INTO Titre (prénom,nom) VALUES ('Anna','Korhonen');
-INSERT INTO Titre (prénom,nom) VALUES ('Pekka','Korhonen');
-INSERT INTO Titre (prénom,nom) VALUES ('Uolevi','Korhonen');
-INSERT INTO Titre (prénom,nom) VALUES ('Uolevi','Lahtinen');
+INSERT INTO Noms (prénom,nom) VALUES ('Anna','Korhonen');
+INSERT INTO Noms (prénom,nom) VALUES ('Pekka','Korhonen');
+INSERT INTO Noms (prénom,nom) VALUES ('Uolevi','Korhonen');
+INSERT INTO Noms (prénom,nom) VALUES ('Uolevi','Lahtinen');
 
 RESULT
 Anna

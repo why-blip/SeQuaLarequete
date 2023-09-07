@@ -1,23 +1,23 @@
 TASK
-Hae eri yritysten määrä.
+Recherchez combien il y a d’entreprises différentes.
 
 TABLES
-CREATE TABLE Tyontekijat (id INTEGER PRIMARY KEY, nimi TEXT, palkka INTEGER, yritys TEXT);
+CREATE TABLE Salariés (id INTEGER PRIMARY KEY, titre TEXT, salaire INTEGER, société TEXT);
 
 TEST
-INSERT INTO Tyontekijat (nimi,palkka,yritys) VALUES ('Uolevi',5000,'Google');
-INSERT INTO Tyontekijat (nimi,palkka,yritys) VALUES ('Maija',6000,'Google');
-INSERT INTO Tyontekijat (nimi,palkka,yritys) VALUES ('Liisa',2000,'Amazon');
-INSERT INTO Tyontekijat (nimi,palkka,yritys) VALUES ('Kaaleppi',7500,'Microsoft');
+INSERT INTO Salariés (titre,salaire,société) VALUES ('Uolevi',5000,'Google');
+INSERT INTO Salariés (titre,salaire,société) VALUES ('Maija',6000,'Google');
+INSERT INTO Salariés (titre,salaire,société) VALUES ('Liisa',2000,'Amazon');
+INSERT INTO Salariés (titre,salaire,société) VALUES ('Kaaleppi',7500,'Microsoft');
 
 RESULT
 3
 
 TEST
-INSERT INTO Tyontekijat (nimi,palkka,yritys) VALUES ('Uolevi',1000,'Google');
-INSERT INTO Tyontekijat (nimi,palkka,yritys) VALUES ('Maija',2000,'Google');
-INSERT INTO Tyontekijat (nimi,palkka,yritys) VALUES ('Liisa',3000,'Google');
-INSERT INTO Tyontekijat (nimi,palkka,yritys) VALUES ('Kaaleppi',4000,'Google');
+INSERT INTO Salariés (titre,salaire,société) VALUES ('Uolevi',1000,'Google');
+INSERT INTO Salariés (titre,salaire,société) VALUES ('Maija',2000,'Google');
+INSERT INTO Salariés (titre,salaire,société) VALUES ('Liisa',3000,'Google');
+INSERT INTO Salariés (titre,salaire,société) VALUES ('Kaaleppi',4000,'Google');
 
 RESULT
 1

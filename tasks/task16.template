@@ -1,5 +1,5 @@
 TASK
-{{Hae suurin työntekijän {palkka}}.}
+{{Hae suurin työntekijän palkka.}}
 
 TABLES
 CREATE TABLE {{Tyontekijat}} (id INTEGER PRIMARY KEY, {{nimi}} TEXT, {{palkka}} INTEGER);

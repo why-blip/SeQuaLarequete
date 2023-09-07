@@ -17,7 +17,7 @@ Pinocchio
 
 TEST
 INSERT INTO Films (titre,année) VALUES ('Fantasia',1940);
-INSERT INTO Films (titre,année) VALUES ('Les Aristochats',1970);
+INSERT INTO Films (titre,année) VALUES ('Aristochats (Les)',1970);
 INSERT INTO Films (titre,année) VALUES ('Taram et le Chaudron magique',1985);
 
 RESULT

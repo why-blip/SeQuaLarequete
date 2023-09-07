@@ -1,20 +1,19 @@
 TASK
-Ilmoita jokaisesta pelaajasta, mikä on hänen paras tuloksensa.
-Voit olettaa, että jokaisella pelaajalla on ainakin yksi tulos.
+Pour chaque joueur-euse, retrouvez son meilleur score. Vous pouvez supposer que chaque joueur-euse a au moins un résultat. 
 
 TABLES
-CREATE TABLE Pelaajat (id INTEGER PRIMARY KEY, nimi TEXT);
-CREATE TABLE Tulokset (id INTEGER PRIMARY KEY, pelaaja_id INTEGER, tulos INTEGER);
+CREATE TABLE Joueurs (id INTEGER PRIMARY KEY, nom TEXT);
+CREATE TABLE Scores (id INTEGER PRIMARY KEY, joueur_id INTEGER, score INTEGER);
 
 TEST
-INSERT INTO Pelaajat (nimi) VALUES ('Uolevi');
-INSERT INTO Pelaajat (nimi) VALUES ('Maija');
-INSERT INTO Pelaajat (nimi) VALUES ('Kaaleppi');
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,250);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,300);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (2,100);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (2,350);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (3,500);
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
+INSERT INTO Joueurs (nom) VALUES ('Maija');
+INSERT INTO Joueurs (nom) VALUES ('Kaaleppi');
+INSERT INTO Scores (joueur_id,score) VALUES (1,250);
+INSERT INTO Scores (joueur_id,score) VALUES (1,300);
+INSERT INTO Scores (joueur_id,score) VALUES (2,100);
+INSERT INTO Scores (joueur_id,score) VALUES (2,350);
+INSERT INTO Scores (joueur_id,score) VALUES (3,500);
 
 RESULT
 Uolevi|300
@@ -22,12 +21,12 @@ Maija|350
 Kaaleppi|500
 
 TEST
-INSERT INTO Pelaajat (nimi) VALUES ('Uolevi');
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,100);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,200);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,300);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,400);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,500);
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
+INSERT INTO Scores (joueur_id,score) VALUES (1,100);
+INSERT INTO Scores (joueur_id,score) VALUES (1,200);
+INSERT INTO Scores (joueur_id,score) VALUES (1,300);
+INSERT INTO Scores (joueur_id,score) VALUES (1,400);
+INSERT INTO Scores (joueur_id,score) VALUES (1,500);
 
 RESULT
 Uolevi|500

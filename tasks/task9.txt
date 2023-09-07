@@ -15,19 +15,19 @@ INSERT INTO Films (titre,année) VALUES ('Bambi',1942);
 
 RESULT
 Pinocchio
-Blanche-Neige
 Fantasia
 Dumbo
+Blanche-Neige
 Bambi
 
 TEST
 INSERT INTO Films (titre,année) VALUES ('Cendrillon',1950);
 INSERT INTO Films (titre,année) VALUES ('Peter Pan',1953);
-INSERT INTO Films (titre,année) VALUES ('Les Aristochats',1970);
+INSERT INTO Films (titre,année) VALUES ('Aristochats (Les)',1970);
 INSERT INTO Films (titre,année) VALUES ('Taram et le Chaudron magique',1985);
 
 RESULT
-Cendrillon
-Peter Pan
 Taram et le Chaudron magique
-Les Aristochats
+Peter Pan
+Cendrillon
+Aristochats (Les)

@@ -1,22 +1,21 @@
 TASK
-Muodosta tuloslista, jossa näkyy kaikki tulokset järjestettynä ensisijaisesti
-käänteisesti pistemäärän mukaan ja toissijaisesti nimen mukaan.
+Créez la liste des noms et scores, classés principalement par score décroissant et secondairement dans l'ordre alphabétique des noms.
 
 STRICT
 
 TABLES
-CREATE TABLE Pelaajat (id INTEGER PRIMARY KEY, nimi TEXT);
-CREATE TABLE Tulokset (id INTEGER PRIMARY KEY, pelaaja_id INTEGER, tulos INTEGER);
+CREATE TABLE Joueurs (id INTEGER PRIMARY KEY, nom TEXT);
+CREATE TABLE Scores (id INTEGER PRIMARY KEY, joueur_id INTEGER, score INTEGER);
 
 TEST
-INSERT INTO Pelaajat (nimi) VALUES ('Uolevi');
-INSERT INTO Pelaajat (nimi) VALUES ('Maija');
-INSERT INTO Pelaajat (nimi) VALUES ('Kaaleppi');
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,250);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,350);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (2,100);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (2,350);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (3,500);
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
+INSERT INTO Joueurs (nom) VALUES ('Maija');
+INSERT INTO Joueurs (nom) VALUES ('Kaaleppi');
+INSERT INTO Scores (joueur_id,score) VALUES (1,250);
+INSERT INTO Scores (joueur_id,score) VALUES (1,350);
+INSERT INTO Scores (joueur_id,score) VALUES (2,100);
+INSERT INTO Scores (joueur_id,score) VALUES (2,350);
+INSERT INTO Scores (joueur_id,score) VALUES (3,500);
 
 RESULT
 Kaaleppi|500
@@ -26,12 +25,12 @@ Uolevi|250
 Maija|100
 
 TEST
-INSERT INTO Pelaajat (nimi) VALUES ('Uolevi');
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,100);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,200);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,300);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,400);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,500);
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
+INSERT INTO Scores (joueur_id,score) VALUES (1,100);
+INSERT INTO Scores (joueur_id,score) VALUES (1,200);
+INSERT INTO Scores (joueur_id,score) VALUES (1,300);
+INSERT INTO Scores (joueur_id,score) VALUES (1,400);
+INSERT INTO Scores (joueur_id,score) VALUES (1,500);
 
 RESULT
 Uolevi|500
@@ -41,15 +40,15 @@ Uolevi|200
 Uolevi|100
 
 TEST
-INSERT INTO Pelaajat (nimi) VALUES ('Uolevi');
-INSERT INTO Pelaajat (nimi) VALUES ('Maija');
-INSERT INTO Pelaajat (nimi) VALUES ('Kaaleppi');
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,100);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (2,100);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (3,100);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,200);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (2,200);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (3,200);
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
+INSERT INTO Joueurs (nom) VALUES ('Maija');
+INSERT INTO Joueurs (nom) VALUES ('Kaaleppi');
+INSERT INTO Scores (joueur_id,score) VALUES (1,100);
+INSERT INTO Scores (joueur_id,score) VALUES (2,100);
+INSERT INTO Scores (joueur_id,score) VALUES (3,100);
+INSERT INTO Scores (joueur_id,score) VALUES (1,200);
+INSERT INTO Scores (joueur_id,score) VALUES (2,200);
+INSERT INTO Scores (joueur_id,score) VALUES (3,200);
 
 RESULT
 Kaaleppi|200

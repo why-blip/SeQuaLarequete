@@ -1,5 +1,5 @@
 TASK
-Obtenez le nombre d'employés dont le salaire est supérieur à 2000.
+Obtenez le nombre d'employé-es dont le salaire est supérieur à 2000.
 
 TABLES
 CREATE TABLE Salariés (id INTEGER PRIMARY KEY, titre TEXT, salaire INTEGER);

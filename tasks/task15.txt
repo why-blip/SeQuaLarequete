@@ -1,5 +1,5 @@
 TASK
-Obtenez la somme des salaires  des employés.
+Obtenez la somme des salaires  des employé-es.
 
 TABLES
 CREATE TABLE Salariés (id INTEGER PRIMARY KEY, titre TEXT, salaire INTEGER);
