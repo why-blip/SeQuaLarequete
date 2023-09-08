@@ -1,0 +1,146 @@
+Exercise 27
+
+Search for the student's name, course name and grade from all the performances.
+Exercise 28
+
+Search for the name and grade of the course from all Uolevi performances.
+School
+id name
+1 Ohpe
+2 Guide
+3 Tira
+4 Depression
+
+Performances
+student_id course_id grade
+Exercise 29
+
+Search for the student's name and grade from all Ohpe performances.
+Exercise 30
+
+Apply for all performances with a grade of 4 or 5.
+Exercise 31
+
+Get the number of achievements for each student. You can assume that every student has at least one achievement.
+Exercise 32
+
+Get the best performance grade for each student. You can assume that every student has at least one achievement.
+Exercise 33
+
+Search for information on all flight connections.
+Exercise 34
+
+Search for destinations on all flights departing from Helsinki.
+Exercise 35
+
+For each player, report how many results they have (even if there are no results).
+Exercise 36
+
+Get the number of achievements for each student (even if there are no achievements).
+Exercise 37
+
+Get the number of completers for each course (even if there are no completions).
+Exercise 38
+
+Retrieve the names of all courses that have been completed at least once.
+Exercise 39
+
+Retrieve the names of all courses that have not been completed even once.
+Exercise 40
+
+Search for each city, how many flights depart from there (even if there are no flights).
+Exercise 41
+
+Search for double the price of each product.
+Exercise 42
+
+Search for all products with an even price.
+Exercise 43
+
+Get the length of each word in characters.
+Exercise 44
+
+Search for all words less than 6 characters long.
+Exercise 45
+
+Search for words arranged primarily by length and secondarily by alphabetical order.
+Exercise 46
+
+Search for users' full names in one column.
+Exercise 47
+
+Find the total length of all words.
+Exercise 48
+
+Calculate the total price of each order.
+Exercise 49
+
+Calculate the sum of the total prices of all orders.
+Exercise 50
+
+Search for the names of all movies released in a leap year. (A year is a leap year if it is divisible by 4. If a year is divisible by 100, it is only a leap year if it is also divisible by 400.)
+Exercise 51
+
+Search all products with the lowest price.
+Exercise 52
+
+Search all products with a price up to double the lowest price.
+Exercise 53
+
+Search for all products whose price is not on any other product.
+Exercise 54
+
+Search for the first word in alphabetical order.
+Exercise 55
+
+Search for another word in alphabetical order. You can assume that no two words are the same on the board.
+Exercise 56
+
+Search all words except the first in alphabetical order. You can assume that no two words are the same on the board.
+Exercise 57
+
+Find all words that contain the letter i.
+Exercise 58
+
+Find all words that start with the letter a.
+Exercise 59
+
+Find all words with exactly five letters and the second letter is p.
+Exercise 60
+
+Find all words with exactly two letters a.
+Exercise 61
+
+Search for information on how many groups he is in for each user.
+Exercise 62
+
+Search for information on how many users belong to each group.
+Exercise 63
+
+Search for all users who belong to more than one group.
+Exercise 64
+
+Search for all users who belong to at least one group with the user "uolevi".
+Exercise 65
+
+Search for all users who do not belong to any of the same groups as the user "uolevi".
+Exercise 66
+
+Search for words arranged in a case-insensitive manner. Each word consists of the letters a-z and A-Z.
+Exercise 67
+
+Search for the product with the lowest price (if there are several cheapest products, choose the first one in alphabetical order).
+Exercise 68
+
+For each product, search for information on whether the price of many products differs by at most one (this includes the product itself).
+Exercise 69
+
+Calculate how many ways you can choose two products so that the total price is exactly 10.
+
+Note! There can be two same products in the combination and we want to calculate different combinations. In the example, the combinations are celery+celery and turnip+turnip (ie turnip+turnip is not included).
+Exercise 70
+
+Calculate the smallest difference in the price of the two products.
+Exercise 71
+
+Calculate each account's balance based on transactions (each account's balance is initially 0).
