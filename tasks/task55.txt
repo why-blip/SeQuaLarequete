@@ -1,7 +1,5 @@
 TASK
-Hae aakkosjärjestyksessä toinen sana.
-
-Voit olettaa, että taulussa ei ole kahta samaa sanaa.
+Search for another word in alphabetical order. You can assume that no two words are the same on the board.
 
 TABLES
 CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);

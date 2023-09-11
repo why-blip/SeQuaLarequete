@@ -1,5 +1,5 @@
 TASK
-Laske, mikä on pienin ero kahden tuotteen hinnassa.
+Calculez la plus petite différence de prix existant entre deux produits.
 
 TABLES
 CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);

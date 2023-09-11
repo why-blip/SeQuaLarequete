@@ -1,20 +1,19 @@
 TASK
-Ilmoita jokaisesta pelaajasta, montako tulosta hänellä on
-(myös vaikka ei olisi tuloksia).
+Pour chaque joueur-euse, obtenez le nombre de résultats obtenus (même s'il n'y en a pas).
 
 TABLES
-CREATE TABLE Pelaajat (id INTEGER PRIMARY KEY, nimi TEXT);
-CREATE TABLE Tulokset (id INTEGER PRIMARY KEY, pelaaja_id INTEGER, tulos INTEGER);
+CREATE TABLE Joueurs (id INTEGER PRIMARY KEY, nom TEXT);
+CREATE TABLE Scores (id INTEGER PRIMARY KEY, joueur_id INTEGER, score INTEGER);
 
 TEST
-INSERT INTO Pelaajat (nimi) VALUES ('Uolevi');
-INSERT INTO Pelaajat (nimi) VALUES ('Maija');
-INSERT INTO Pelaajat (nimi) VALUES ('Kaaleppi');
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,250);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (1,300);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (2,100);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (2,350);
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (2,500);
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
+INSERT INTO Joueurs (nom) VALUES ('Maija');
+INSERT INTO Joueurs (nom) VALUES ('Kaaleppi');
+INSERT INTO Scores (joueur_id,score) VALUES (1,250);
+INSERT INTO Scores (joueur_id,score) VALUES (1,300);
+INSERT INTO Scores (joueur_id,score) VALUES (2,100);
+INSERT INTO Scores (joueur_id,score) VALUES (2,350);
+INSERT INTO Scores (joueur_id,score) VALUES (2,500);
 
 RESULT
 Uolevi|2
@@ -22,10 +21,10 @@ Maija|3
 Kaaleppi|0
 
 TEST
-INSERT INTO Pelaajat (nimi) VALUES ('Uolevi');
-INSERT INTO Pelaajat (nimi) VALUES ('Maija');
-INSERT INTO Pelaajat (nimi) VALUES ('Kaaleppi');
-INSERT INTO Tulokset (pelaaja_id,tulos) VALUES (3,100);
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
+INSERT INTO Joueurs (nom) VALUES ('Maija');
+INSERT INTO Joueurs (nom) VALUES ('Kaaleppi');
+INSERT INTO Scores (joueur_id,score) VALUES (3,100);
 
 RESULT
 Uolevi|0

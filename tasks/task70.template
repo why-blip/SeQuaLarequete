@@ -1,5 +1,5 @@
 TASK
-Laske, mikä on pienin ero kahden tuotteen hinnassa.
+{{Laske, mikä on pienin ero kahden tuotteen hinnassa.}}
 
 TABLES
 CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);

@@ -1,19 +1,19 @@
 TASK
-Hae tiedot kaikista lentoyhteyksistä.
+Search for information on all flight connections.
 
 TABLES
-CREATE TABLE Kaupungit (id INTEGER PRIMARY KEY, nimi TEXT);
-CREATE TABLE Lennot (id INTEGER PRIMARY KEY, mista_id INTEGER, minne_id INTEGER);
+CREATE TABLE Villes (id INTEGER PRIMARY KEY, titre TEXT);
+CREATE TABLE Vols (id INTEGER PRIMARY KEY, _mista_id_ INTEGER, _minne_id_ INTEGER);
 
 TEST
-INSERT INTO Kaupungit (nimi) VALUES ('Helsinki');
-INSERT INTO Kaupungit (nimi) VALUES ('Tukholma');
-INSERT INTO Kaupungit (nimi) VALUES ('Oslo');
-INSERT INTO Kaupungit (nimi) VALUES ('Turku');
-INSERT INTO Lennot (mista_id, minne_id) VALUES (1,2);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (1,3);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (2,3);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (2,4);
+INSERT INTO Villes (titre) VALUES ('Helsinki');
+INSERT INTO Villes (titre) VALUES ('Tukholma');
+INSERT INTO Villes (titre) VALUES ('Oslo');
+INSERT INTO Villes (titre) VALUES ('Turku');
+INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (1,2);
+INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (1,3);
+INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (2,3);
+INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (2,4);
 
 RESULT
 Helsinki|Tukholma
@@ -22,13 +22,13 @@ Tukholma|Oslo
 Tukholma|Turku
 
 TEST
-INSERT INTO Kaupungit (nimi) VALUES ('Helsinki');
-INSERT INTO Kaupungit (nimi) VALUES ('Tukholma');
-INSERT INTO Kaupungit (nimi) VALUES ('Oslo');
-INSERT INTO Lennot (mista_id, minne_id) VALUES (1,2);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (2,1);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (1,3);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (3,1);
+INSERT INTO Villes (titre) VALUES ('Helsinki');
+INSERT INTO Villes (titre) VALUES ('Tukholma');
+INSERT INTO Villes (titre) VALUES ('Oslo');
+INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (1,2);
+INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (2,1);
+INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (1,3);
+INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (3,1);
 
 RESULT
 Helsinki|Tukholma

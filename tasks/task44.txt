@@ -1,22 +1,22 @@
 TASK
-Hae kaikki sanat, joiden pituus on alle 6 merkkiä.
+Obtenez tous les mots ayant moins de 6 caractères.
 
 TABLES
-CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);
+CREATE TABLE Mots (id INTEGER PRIMARY KEY, mot TEXT);
 
 TEST
-INSERT INTO Sanat (sana) VALUES ('apina');
-INSERT INTO Sanat (sana) VALUES ('banaani');
-INSERT INTO Sanat (sana) VALUES ('cembalo');
+INSERT INTO Mots (mot) VALUES ('apina');
+INSERT INTO Mots (mot) VALUES ('banaani');
+INSERT INTO Mots (mot) VALUES ('cembalo');
 
 RESULT
 apina
 
 TEST
-INSERT INTO Sanat (sana) VALUES ('Uolevi');
-INSERT INTO Sanat (sana) VALUES ('Maija');
-INSERT INTO Sanat (sana) VALUES ('Vihtori');
-INSERT INTO Sanat (sana) VALUES ('Anna');
+INSERT INTO Mots (mot) VALUES ('Uolevi');
+INSERT INTO Mots (mot) VALUES ('Maija');
+INSERT INTO Mots (mot) VALUES ('Vihtori');
+INSERT INTO Mots (mot) VALUES ('Anna');
 
 RESULT
 Maija

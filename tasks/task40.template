@@ -1,20 +1,19 @@
 TASK
-Hae jokaisesta kaupungista, montako lentoa sieltä lähtee
-(myös vaikka ei olisi lentoja).
+{{Hae jokaisesta kaupungista, montako lentoa sieltä lähtee (myös vaikka ei olisi lentoja).}}
 
 TABLES
-CREATE TABLE Kaupungit (id INTEGER PRIMARY KEY, nimi TEXT);
-CREATE TABLE Lennot (id INTEGER PRIMARY KEY, mista_id INTEGER, minne_id INTEGER);
+CREATE TABLE {{Kaupungit}} (id INTEGER PRIMARY KEY, {{nimi2}} TEXT);
+CREATE TABLE {{Lennot}} (id INTEGER PRIMARY KEY, {{mista_id}} INTEGER, {{minne_id}} INTEGER);
 
 TEST
-INSERT INTO Kaupungit (nimi) VALUES ('Helsinki');
-INSERT INTO Kaupungit (nimi) VALUES ('Tukholma');
-INSERT INTO Kaupungit (nimi) VALUES ('Oslo');
-INSERT INTO Kaupungit (nimi) VALUES ('Turku');
-INSERT INTO Lennot (mista_id, minne_id) VALUES (1,2);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (1,3);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (2,3);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (3,4);
+INSERT INTO {{Kaupungit}} ({{nimi2}}) VALUES ('Helsinki');
+INSERT INTO {{Kaupungit}} ({{nimi2}}) VALUES ('Tukholma');
+INSERT INTO {{Kaupungit}} ({{nimi2}}) VALUES ('Oslo');
+INSERT INTO {{Kaupungit}} ({{nimi2}}) VALUES ('Turku');
+INSERT INTO {{Lennot}} ({{mista_id}}, {{minne_id}}) VALUES (1,2);
+INSERT INTO {{Lennot}} ({{mista_id}}, {{minne_id}}) VALUES (1,3);
+INSERT INTO {{Lennot}} ({{mista_id}}, {{minne_id}}) VALUES (2,3);
+INSERT INTO {{Lennot}} ({{mista_id}}, {{minne_id}}) VALUES (3,4);
 
 RESULT
 Helsinki|2
@@ -23,13 +22,13 @@ Oslo|1
 Turku|0
 
 TEST
-INSERT INTO Kaupungit (nimi) VALUES ('Helsinki');
-INSERT INTO Kaupungit (nimi) VALUES ('Tukholma');
-INSERT INTO Kaupungit (nimi) VALUES ('Oslo');
-INSERT INTO Kaupungit (nimi) VALUES ('Turku');
-INSERT INTO Lennot (mista_id, minne_id) VALUES (1,2);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (1,3);
-INSERT INTO Lennot (mista_id, minne_id) VALUES (1,4);
+INSERT INTO {{Kaupungit}} ({{nimi2}}) VALUES ('Helsinki');
+INSERT INTO {{Kaupungit}} ({{nimi2}}) VALUES ('Tukholma');
+INSERT INTO {{Kaupungit}} ({{nimi2}}) VALUES ('Oslo');
+INSERT INTO {{Kaupungit}} ({{nimi2}}) VALUES ('Turku');
+INSERT INTO {{Lennot}} ({{mista_id}}, {{minne_id}}) VALUES (1,2);
+INSERT INTO {{Lennot}} ({{mista_id}}, {{minne_id}}) VALUES (1,3);
+INSERT INTO {{Lennot}} ({{mista_id}}, {{minne_id}}) VALUES (1,4);
 
 RESULT
 Helsinki|3

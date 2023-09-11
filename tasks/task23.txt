@@ -2,13 +2,13 @@ TASK
 Créez une liste de résultats affichant les scores supérieurs à 250
 
 TABLES
-CREATE TABLE Joueurs (id INTEGER PRIMARY KEY, nimi TEXT);
+CREATE TABLE Joueurs (id INTEGER PRIMARY KEY, nom TEXT);
 CREATE TABLE Scores (id INTEGER PRIMARY KEY, joueur_id INTEGER, score INTEGER);
 
 TEST
-INSERT INTO Joueurs (nimi) VALUES ('Uolevi');
-INSERT INTO Joueurs (nimi) VALUES ('Maija');
-INSERT INTO Joueurs (nimi) VALUES ('Kaaleppi');
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
+INSERT INTO Joueurs (nom) VALUES ('Maija');
+INSERT INTO Joueurs (nom) VALUES ('Kaaleppi');
 INSERT INTO Scores (joueur_id,score) VALUES (1,250);
 INSERT INTO Scores (joueur_id,score) VALUES (1,300);
 INSERT INTO Scores (joueur_id,score) VALUES (2,100);
@@ -23,7 +23,7 @@ Kaaleppi|400
 Kaaleppi|500
 
 TEST
-INSERT INTO Joueurs (nimi) VALUES ('Uolevi');
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
 INSERT INTO Scores (joueur_id,score) VALUES (1,100);
 INSERT INTO Scores (joueur_id,score) VALUES (1,200);
 INSERT INTO Scores (joueur_id,score) VALUES (1,300);

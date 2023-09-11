@@ -1,8 +1,5 @@
 TASK
-Hae sanat järjestettynä niin,
-että kirjainkoolla ei ole merkitystä.
-Jokainen sana muodostuu kirjaimista
-a–z ja A–Z.
+Obtenez les liste des mots dans l'ordre alphabétique insensible à la casse. Vous pouvez supposer que les mots sont formés des lettres <pre>a-zA-Z</pre>.
 
 STRICT
 

@@ -1,7 +1,5 @@
 TASK
-Hae tuote, jonka hinta on halvin
-(jos halvimpia tuotteita on useita,
-valitse aakkosjärjestyksessä ensimmäinen).
+{{Hae tuote, jonka hinta on halvin (jos halvimpia tuotteita on useita, valitse aakkosjärjestyksessä ensimmäinen).}}
 
 TABLES
 CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);

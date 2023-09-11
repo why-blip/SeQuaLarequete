@@ -1,5 +1,5 @@
 TASK
-Hae kaikki tuotteet, joiden hintaa ei ole millään muulla tuotteella.
+Cherchez les produits dont le prix n'est identique à aucun autre.
 
 TABLES
 CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);

@@ -1,22 +1,22 @@
 TASK
-Hae kaikkien sanojen yhteispituus.
+Claculez la somme des longueurs de tous les mots.
 
 TABLES
-CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);
+CREATE TABLE Mots (id INTEGER PRIMARY KEY, mot TEXT);
 
 TEST
-INSERT INTO Sanat (sana) VALUES ('apina');
-INSERT INTO Sanat (sana) VALUES ('banaani');
-INSERT INTO Sanat (sana) VALUES ('cembalo');
+INSERT INTO Mots (mot) VALUES ('apina');
+INSERT INTO Mots (mot) VALUES ('banaani');
+INSERT INTO Mots (mot) VALUES ('cembalo');
 
 RESULT
 19
 
 TEST
-INSERT INTO Sanat (sana) VALUES ('Uolevi');
-INSERT INTO Sanat (sana) VALUES ('Maija');
-INSERT INTO Sanat (sana) VALUES ('Kaaleppi');
-INSERT INTO Sanat (sana) VALUES ('Liisa');
+INSERT INTO Mots (mot) VALUES ('Uolevi');
+INSERT INTO Mots (mot) VALUES ('Maija');
+INSERT INTO Mots (mot) VALUES ('Kaaleppi');
+INSERT INTO Mots (mot) VALUES ('Liisa');
 
 RESULT
 24

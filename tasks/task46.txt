@@ -1,13 +1,13 @@
 TASK
-Hae käyttäjien koko nimet yhtenä sarakkeena.
+Obtenez le nom complet de chaque utilisateur-rice dans une seule colonne.
 
 TABLES
-CREATE TABLE Kayttajat (id INTEGER PRIMARY KEY, etunimi TEXT, sukunimi TEXT);
+CREATE TABLE Utilisateurs (id INTEGER PRIMARY KEY, prénom TEXT, nom TEXT);
 
 TEST
-INSERT INTO Kayttajat (etunimi,sukunimi) VALUES ('Liisa','Virtanen');
-INSERT INTO Kayttajat (etunimi,sukunimi) VALUES ('Anna','Korhonen');
-INSERT INTO Kayttajat (etunimi,sukunimi) VALUES ('Kalle','Ojala');
+INSERT INTO Utilisateurs (prénom,nom) VALUES ('Liisa','Virtanen');
+INSERT INTO Utilisateurs (prénom,nom) VALUES ('Anna','Korhonen');
+INSERT INTO Utilisateurs (prénom,nom) VALUES ('Kalle','Ojala');
 
 RESULT
 Liisa Virtanen
@@ -15,9 +15,9 @@ Anna Korhonen
 Kalle Ojala
 
 TEST
-INSERT INTO Kayttajat (etunimi,sukunimi) VALUES ('Liisa','Korhonen');
-INSERT INTO Kayttajat (etunimi,sukunimi) VALUES ('Anna','Ojala');
-INSERT INTO Kayttajat (etunimi,sukunimi) VALUES ('Kalle','Virtanen');
+INSERT INTO Utilisateurs (prénom,nom) VALUES ('Liisa','Korhonen');
+INSERT INTO Utilisateurs (prénom,nom) VALUES ('Anna','Ojala');
+INSERT INTO Utilisateurs (prénom,nom) VALUES ('Kalle','Virtanen');
 
 RESULT
 Liisa Korhonen

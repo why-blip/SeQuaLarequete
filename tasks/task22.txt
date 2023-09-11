@@ -2,13 +2,13 @@ TASK
 Créez la liste des scores d'Uolevi.
 
 TABLES
-CREATE TABLE Joueurs (id INTEGER PRIMARY KEY, titre TEXT);
+CREATE TABLE Joueurs (id INTEGER PRIMARY KEY, nom TEXT);
 CREATE TABLE Scores (id INTEGER PRIMARY KEY, joueur_id INTEGER, score INTEGER);
 
 TEST
-INSERT INTO Joueurs (titre) VALUES ('Uolevi');
-INSERT INTO Joueurs (titre) VALUES ('Maija');
-INSERT INTO Joueurs (titre) VALUES ('Kaaleppi');
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
+INSERT INTO Joueurs (nom) VALUES ('Maija');
+INSERT INTO Joueurs (nom) VALUES ('Kaaleppi');
 INSERT INTO Scores (joueur_id,score) VALUES (1,250);
 INSERT INTO Scores (joueur_id,score) VALUES (1,300);
 INSERT INTO Scores (joueur_id,score) VALUES (2,100);
@@ -20,7 +20,7 @@ Uolevi|250
 Uolevi|300
 
 TEST
-INSERT INTO Joueurs (titre) VALUES ('Uolevi');
+INSERT INTO Joueurs (nom) VALUES ('Uolevi');
 INSERT INTO Scores (joueur_id,score) VALUES (1,100);
 INSERT INTO Scores (joueur_id,score) VALUES (1,200);
 INSERT INTO Scores (joueur_id,score) VALUES (1,300);

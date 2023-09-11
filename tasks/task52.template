@@ -1,15 +1,14 @@
 TASK
-Hae kaikki tuotteet, joiden hinta on enintään kaksinkertainen
-halvimpaan hintaan verrattuna.
+{{Hae kaikki tuotteet, joiden {{hinta}} on enintään kaksinkertainen halvimpaan {{hinta}}an verrattuna.}}
 
 TABLES
-CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);
+CREATE TABLE {{Tuotteet}} (id INTEGER PRIMARY KEY, {{nimi2}} TEXT, {{hinta}} INTEGER);
 
 TEST
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('selleri',7);
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('lanttu',3);
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('retiisi',5);
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('nauris',6);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('selleri',7);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('lanttu',3);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('retiisi',5);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('nauris',6);
 
 RESULT
 lanttu
@@ -17,19 +16,19 @@ retiisi
 nauris
 
 TEST
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('selleri',7);
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('lanttu',2);
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('retiisi',5);
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('nauris',6);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('selleri',7);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('lanttu',2);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('retiisi',5);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('nauris',6);
 
 RESULT
 lanttu
 
 TEST
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('selleri',5);
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('lanttu',6);
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('retiisi',7);
-INSERT INTO Tuotteet (nimi,hinta) VALUES ('nauris',8);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('selleri',5);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('lanttu',6);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('retiisi',7);
+INSERT INTO {{Tuotteet}} ({{nimi2}},{{hinta}}) VALUES ('nauris',8);
 
 RESULT
 selleri

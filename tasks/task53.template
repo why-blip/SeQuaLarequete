@@ -1,5 +1,5 @@
 TASK
-Hae kaikki tuotteet, joiden hintaa ei ole millään muulla tuotteella.
+{{Hae kaikki tuotteet, joiden hintaa ei ole millään muulla tuotteella.}}
 
 TABLES
 CREATE TABLE Tuotteet (id INTEGER PRIMARY KEY, nimi TEXT, hinta INTEGER);

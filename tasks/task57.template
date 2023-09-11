@@ -1,5 +1,5 @@
 TASK
-Hae kaikki sanat, joissa esiintyy i-kirjain.
+{{Hae kaikki sanat, joissa esiintyy i-kirjain.}}
 
 TABLES
 CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);

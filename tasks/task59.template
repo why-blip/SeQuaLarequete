@@ -1,6 +1,5 @@
 TASK
-Hae kaikki sanat, joissa on tasan viisi kirjainta
-ja toinen kirjain on p.
+{{Hae kaikki sanat, joissa on tasan viisi kirjainta ja toinen kirjain on p.}}
 
 TABLES
 CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);

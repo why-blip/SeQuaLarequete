@@ -1,5 +1,5 @@
 TASK
-Hae kaikki sanat, joissa on tasan kaksi a-kirjainta.
+{{Hae kaikki sanat, joissa on tasan kaksi a-kirjainta.}}
 
 TABLES
 CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);

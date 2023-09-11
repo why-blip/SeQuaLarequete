@@ -1,16 +1,15 @@
 TASK
-Hae sanat järjestettynä ensisijaisesti pituuden mukaan
-ja toissijaisesti aakkosjärjestyksen mukaan.
+Obtenez la liste des mots classés en priorité par longueur croissante puis dans l'ordre alphabétique.
 
 STRICT
 
 TABLES
-CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);
+CREATE TABLE Mots (id INTEGER PRIMARY KEY, mot TEXT);
 
 TEST
-INSERT INTO Sanat (sana) VALUES ('banaani');
-INSERT INTO Sanat (sana) VALUES ('aakkonen');
-INSERT INTO Sanat (sana) VALUES ('cembalo');
+INSERT INTO Mots (mot) VALUES ('banaani');
+INSERT INTO Mots (mot) VALUES ('aakkonen');
+INSERT INTO Mots (mot) VALUES ('cembalo');
 
 RESULT
 banaani
@@ -18,11 +17,11 @@ cembalo
 aakkonen
 
 TEST
-INSERT INTO Sanat (sana) VALUES ('katu');
-INSERT INTO Sanat (sana) VALUES ('kala');
-INSERT INTO Sanat (sana) VALUES ('pelle');
-INSERT INTO Sanat (sana) VALUES ('apina');
-INSERT INTO Sanat (sana) VALUES ('hai');
+INSERT INTO Mots (mot) VALUES ('katu');
+INSERT INTO Mots (mot) VALUES ('kala');
+INSERT INTO Mots (mot) VALUES ('pelle');
+INSERT INTO Mots (mot) VALUES ('apina');
+INSERT INTO Mots (mot) VALUES ('hai');
 
 RESULT
 hai

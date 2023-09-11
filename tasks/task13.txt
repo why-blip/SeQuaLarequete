@@ -2,21 +2,21 @@ TASK
 Obtenez le nombre d'employé-es.
 
 TABLES
-CREATE TABLE Salariés (id INTEGER PRIMARY KEY, titre TEXT, salaire INTEGER);
+CREATE TABLE Salariés (id INTEGER PRIMARY KEY, nom TEXT, salaire INTEGER);
 
 TEST
-INSERT INTO Salariés (titre,salaire) VALUES ('Uolevi',2500);
-INSERT INTO Salariés (titre,salaire) VALUES ('Maija',3000);
-INSERT INTO Salariés (titre,salaire) VALUES ('Liisa',5000);
-INSERT INTO Salariés (titre,salaire) VALUES ('Kaaleppi',1500);
+INSERT INTO Salariés (nom,salaire) VALUES ('Uolevi',2500);
+INSERT INTO Salariés (nom,salaire) VALUES ('Maija',3000);
+INSERT INTO Salariés (nom,salaire) VALUES ('Liisa',5000);
+INSERT INTO Salariés (nom,salaire) VALUES ('Kaaleppi',1500);
 
 RESULT
 4
 
 TEST
-INSERT INTO Salariés (titre,salaire) VALUES ('Kotivalo',2000);
-INSERT INTO Salariés (titre,salaire) VALUES ('Justiina',10000);
-INSERT INTO Salariés (titre,salaire) VALUES ('Vihtori',1000);
+INSERT INTO Salariés (nom,salaire) VALUES ('Kotivalo',2000);
+INSERT INTO Salariés (nom,salaire) VALUES ('Justiina',10000);
+INSERT INTO Salariés (nom,salaire) VALUES ('Vihtori',1000);
 
 RESULT
 3

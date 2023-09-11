@@ -1,5 +1,5 @@
 TASK
-Hae kaikki sanat, joissa on tasan kaksi a-kirjainta.
+Trouvez tous les mots ayant deux lettres <pre>a</pre>.
 
 TABLES
 CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);

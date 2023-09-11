@@ -1,5 +1,5 @@
 TASK
-Hae jokaisesta käyttäjästä tieto, monessako ryhmässä hän on.
+{{Hae jokaisesta käyttäjästä tieto, monessako ryhmässä hän on.}}
 
 TABLES
 CREATE TABLE Kayttajat (id INTEGER PRIMARY KEY, tunnus TEXT);

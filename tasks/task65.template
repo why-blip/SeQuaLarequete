@@ -1,6 +1,5 @@
 TASK
-Hae kaikki käyttäjät, jotka eivät kuulu mihinkään
-samaan ryhmään käyttäjän "uolevi" kanssa.
+{{Hae kaikki käyttäjät, jotka eivät kuulu mihinkään samaan ryhmään käyttäjän uolevi kanssa.}}
 
 TABLES
 CREATE TABLE Kayttajat (id INTEGER PRIMARY KEY, tunnus TEXT);

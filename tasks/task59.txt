@@ -1,6 +1,5 @@
 TASK
-Hae kaikki sanat, joissa on tasan viisi kirjainta
-ja toinen kirjain on p.
+Trouvez tous les mots ayant 5 lettres et dont la 2e est un <pre>p</pre>Find all words with exactly five letters and the second letter is p.
 
 TABLES
 CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);

@@ -1,6 +1,5 @@
 TASK
-Hae kaikki käyttäjät, jotka eivät kuulu mihinkään
-samaan ryhmään käyttäjän "uolevi" kanssa.
+Cherchez les utilisateur-trices n'ayant aucun groupe en commun avec l'utilisateur <pre>uolevi</pre>.
 
 TABLES
 CREATE TABLE Kayttajat (id INTEGER PRIMARY KEY, tunnus TEXT);
