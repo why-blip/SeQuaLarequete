@@ -1,23 +1,23 @@
 TASK
-Produits on parillinen.}}
+Obtenez tous les produits dont le prix est un nombre pair.
 
 TABLES
-CREATE TABLE nom (id INTEGER PRIMARY KEY, prix TEXT, Produits INTEGER);
+CREATE TABLE Produits (id INTEGER PRIMARY KEY, nom TEXT, prix INTEGER);
 
 TEST
-INSERT INTO nom (prix,Produits) VALUES ('selleri',5);
-INSERT INTO nom (prix,Produits) VALUES ('lanttu',8);
-INSERT INTO nom (prix,Produits) VALUES ('nauris',7);
-INSERT INTO nom (prix,Produits) VALUES ('porkkana',2);
+INSERT INTO Produits (nom,prix) VALUES ('selleri',5);
+INSERT INTO Produits (nom,prix) VALUES ('lanttu',8);
+INSERT INTO Produits (nom,prix) VALUES ('nauris',7);
+INSERT INTO Produits (nom,prix) VALUES ('porkkana',2);
 
 RESULT
 lanttu|8
 porkkana|2
 
 TEST
-INSERT INTO nom (prix,Produits) VALUES ('ananas',4);
-INSERT INTO nom (prix,Produits) VALUES ('banaani',8);
-INSERT INTO nom (prix,{{hinta}}) VALUES ('peruna',5);
+INSERT INTO Produits (nom,prix) VALUES ('ananas',4);
+INSERT INTO Produits (nom,prix) VALUES ('banaani',8);
+INSERT INTO Produits (nom,prix) VALUES ('peruna',5);
 
 RESULT
 ananas|4

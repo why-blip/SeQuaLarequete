@@ -3,17 +3,17 @@ Par chaque ville, obtenez le nombre de vols au départ de celle-ci (éventuellem
 
 TABLES
 CREATE TABLE Villes (id INTEGER PRIMARY KEY, nom TEXT);
-CREATE TABLE Vols (id INTEGER PRIMARY KEY, _mista_id_ INTEGER, _minne_id_ INTEGER);
+CREATE TABLE Vols (id INTEGER PRIMARY KEY, depart_id INTEGER, arrivee_id INTEGER);
 
 TEST
 INSERT INTO Villes (nom) VALUES ('Helsinki');
 INSERT INTO Villes (nom) VALUES ('Tukholma');
 INSERT INTO Villes (nom) VALUES ('Oslo');
 INSERT INTO Villes (nom) VALUES ('Turku');
-INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (1,2);
-INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (1,3);
-INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (2,3);
-INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (3,4);
+INSERT INTO Vols (depart_id, arrivee_id) VALUES (1,2);
+INSERT INTO Vols (depart_id, arrivee_id) VALUES (1,3);
+INSERT INTO Vols (depart_id, arrivee_id) VALUES (2,3);
+INSERT INTO Vols (depart_id, arrivee_id) VALUES (3,4);
 
 RESULT
 Helsinki|2
@@ -26,9 +26,9 @@ INSERT INTO Villes (nom) VALUES ('Helsinki');
 INSERT INTO Villes (nom) VALUES ('Tukholma');
 INSERT INTO Villes (nom) VALUES ('Oslo');
 INSERT INTO Villes (nom) VALUES ('Turku');
-INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (1,2);
-INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (1,3);
-INSERT INTO Vols (_mista_id_, _minne_id_) VALUES (1,4);
+INSERT INTO Vols (depart_id, arrivee_id) VALUES (1,2);
+INSERT INTO Vols (depart_id, arrivee_id) VALUES (1,3);
+INSERT INTO Vols (depart_id, arrivee_id) VALUES (1,4);
 
 RESULT
 Helsinki|3

@@ -1,5 +1,5 @@
 TASK
-{{Hae kaikki tuotteet, joiden {{hinta}} on enintään kaksinkertainen halvimpaan {{hinta}}an verrattuna.}}
+{{Hae kaikki tuotteet, joiden hinta on enintään kaksinkertainen halvimpaan hintaan verrattuna.}}
 
 TABLES
 CREATE TABLE {{Tuotteet}} (id INTEGER PRIMARY KEY, {{nimi2}} TEXT, {{hinta}} INTEGER);

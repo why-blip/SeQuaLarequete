@@ -2,23 +2,23 @@ TASK
 Obtenez le nom, la matière et le grade des l'étudiants pour tous les devoirs.
 
 TABLES
-CREATE TABLE Etudiants (id INTEGER PRIMARY KEY, titre TEXT);
+CREATE TABLE Etudiants (id INTEGER PRIMARY KEY, nom TEXT);
 CREATE TABLE Matières (id INTEGER PRIMARY KEY, titre TEXT);
-CREATE TABLE Résultats (etudiant_id INTEGER, matiere_id INTEGER, arvosana INTEGER);
+CREATE TABLE Résultats (etudiant_id INTEGER, matiere_id INTEGER, grade INTEGER);
 
 TEST
-INSERT INTO Etudiants (titre) VALUES ('Uolevi');
-INSERT INTO Etudiants (titre) VALUES ('Maija');
-INSERT INTO Etudiants (titre) VALUES ('Kaaleppi');
+INSERT INTO Etudiants (nom) VALUES ('Uolevi');
+INSERT INTO Etudiants (nom) VALUES ('Maija');
+INSERT INTO Etudiants (nom) VALUES ('Kaaleppi');
 INSERT INTO Matières (titre) VALUES ('Ohpe');
 INSERT INTO Matières (titre) VALUES ('Ohja');
 INSERT INTO Matières (titre) VALUES ('Tira');
 INSERT INTO Matières (titre) VALUES ('Lama');
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (1,1,3);
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (1,2,4);
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (2,1,2);
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (2,4,5);
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (3,3,4);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (1,1,3);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (1,2,4);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (2,1,2);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (2,4,5);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (3,3,4);
 
 RESULT
 Uolevi|Ohpe|3
@@ -28,16 +28,16 @@ Maija|Lama|5
 Kaaleppi|Tira|4
 
 TEST
-INSERT INTO Etudiants (titre) VALUES ('Uolevi');
-INSERT INTO Etudiants (titre) VALUES ('Maija');
-INSERT INTO Etudiants (titre) VALUES ('Kaaleppi');
+INSERT INTO Etudiants (nom) VALUES ('Uolevi');
+INSERT INTO Etudiants (nom) VALUES ('Maija');
+INSERT INTO Etudiants (nom) VALUES ('Kaaleppi');
 INSERT INTO Matières (titre) VALUES ('Ohpe');
 INSERT INTO Matières (titre) VALUES ('Ohja');
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (1,1,1);
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (1,2,2);
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (2,1,3);
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (2,2,4);
-INSERT INTO Résultats (etudiant_id,matiere_id,arvosana) VALUES (3,1,5);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (1,1,1);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (1,2,2);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (2,1,3);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (2,2,4);
+INSERT INTO Résultats (etudiant_id,matiere_id,grade) VALUES (3,1,5);
 
 RESULT
 Uolevi|Ohpe|1
