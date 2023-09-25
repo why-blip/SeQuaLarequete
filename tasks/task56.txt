@@ -1,5 +1,5 @@
 TASK
-Obtenez tous les mots sauf celui qui est le premier de l'ordre alphabétique. Vous pouvez supposer que tous les mots sont différents.
+Obtenez tous les mots sauf celui qu?note?i est le premier de l'ordre alphabétique. Vous pouvez supposer que tous les mots sont différents.
 
 TABLES
 CREATE TABLE Sanat (id INTEGER PRIMARY KEY, sana TEXT);

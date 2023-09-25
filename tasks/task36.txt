@@ -1,5 +1,5 @@
 TASK
-Obtenez le nombre de notes de chaque étudiant-e (même s'il n'y en a pas).
+Obtenez le nombre de n?note?otes de chaque étudiant-e (même s'il n'y en a pas).
 
 TABLES
 CREATE TABLE Etudiants (id INTEGER PRIMARY KEY, nom TEXT);
