@@ -20,8 +20,4 @@ Le plus simple est de :
 - Ouvrir `localhost:8000` dans un navigateur (si 8000 est le port
  choisi par le serveur Web)
  
-### Traduction 
-
-[Vous voulez contribuer à la traduction ?](francisation.md)
-
 [^1]: Sous windows, un double-clic sur `start_local_server.py` devrait faire l'affaire
