@@ -2,20 +2,20 @@ TASK
 Calculate the sum of the total prices of all orders.
 
 TABLES
-CREATE TABLE Commandes (id INTEGER PRIMARY KEY, produit TEXT, prix INTEGER, quantité INTEGER);
+CREATE TABLE Commandes (id INTEGER PRIMARY KEY, produit TEXT, prix INTEGER, quantite INTEGER);
 
 TEST
-INSERT INTO Commandes (produit,prix,quantité) VALUES ('lanttu',4,10);
-INSERT INTO Commandes (produit,prix,quantité) VALUES ('selleri',7,20);
-INSERT INTO Commandes (produit,prix,quantité) VALUES ('nauris',5,15);
+INSERT INTO Commandes (produit,prix,quantite) VALUES ('lanttu',4,10);
+INSERT INTO Commandes (produit,prix,quantite) VALUES ('selleri',7,20);
+INSERT INTO Commandes (produit,prix,quantite) VALUES ('nauris',5,15);
 
 RESULT
 255
 
 TEST
-INSERT INTO Commandes (produit,prix,quantité) VALUES ('lanttu',4,1);
-INSERT INTO Commandes (produit,prix,quantité) VALUES ('lanttu',4,10);
-INSERT INTO Commandes (produit,prix,quantité) VALUES ('lanttu',4,100);
+INSERT INTO Commandes (produit,prix,quantite) VALUES ('lanttu',4,1);
+INSERT INTO Commandes (produit,prix,quantite) VALUES ('lanttu',4,10);
+INSERT INTO Commandes (produit,prix,quantite) VALUES ('lanttu',4,100);
 
 RESULT
 444
